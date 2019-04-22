@@ -84,7 +84,6 @@ def all_holidays_with_bbq(holiday_hash)
   array = []
   holiday_hash.collect do |season, holidays|
     if holidays.values.flatten.include?("BBQ")
-      binding.pry
       array.push(holidays.keys)
     end
   end
